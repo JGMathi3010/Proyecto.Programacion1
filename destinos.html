@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brújula Viajes | Destinos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenedor barra">
+      <p class="logo"><img src="img/logo.png" alt="Logo Brújula Viajes" class="logo-icono"> Brújula Viajes</p>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html">Destinos</a>
+        <a href="galeria.html">Galería</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contenedor seccion">
+    <h1>Destinos</h1>
+
+    <div class="controles">
+      <input type="text" id="buscador" placeholder="Buscar destino...">
+      <select id="filtro">
+        <option value="todos">Todos</option>
+        <option value="destino">Solo destinos</option>
+        <option value="paquete">Solo paquetes</option>
+      </select>
+    </div>
+
+    <div class="tarjetas" id="listaTarjetas">
+
+      <article class="tarjeta" data-categoria="destino">
+        <h3>Bosnia y Herzegovina</h3>
+        <p>Sarajevo y Mostar. 8 días / 7 noches.</p>
+        <p class="precio">₡850 000</p>
+        <button class="boton">Agregar</button>
+      </article>
+
+      <article class="tarjeta" data-categoria="destino">
+        <h3>Estados Unidos</h3>
+        <p>Nueva York. 6 días / 5 noches.</p>
+        <p class="precio">₡920 000</p>
+        <button class="boton">Agregar</button>
+      </article>
+
+      <article class="tarjeta" data-categoria="paquete">
+        <h3>Paquete África</h3>
+        <p>Egipto, Marruecos y Argelia. 14 días / 13 noches.</p>
+        <p class="precio">₡2 150 000</p>
+        <button class="boton">Agregar</button>
+      </article>
+
+      <article class="tarjeta" data-categoria="paquete">
+        <h3>Paquete América</h3>
+        <p>Brasil, Argentina y Chile. 15 días / 14 noches.</p>
+        <p class="precio">₡2 050 000</p>
+        <button class="boton">Agregar</button>
+      </article>
+
+    </div>
+
+    <p id="mensajeVacio" class="mensaje-vacio" hidden>No se encontraron destinos.</p>
+  </section>
+
+  <footer>
+    <p>Brújula Viajes &copy; 2026</p>
+  </footer>
+
+  <script src="js/funciones.js"></script>
+</body>
+</html>

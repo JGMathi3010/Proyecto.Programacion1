@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brújula Viajes | Contacto</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenedor barra">
+      <p class="logo"><img src="img/logo.png" alt="Logo Brújula Viajes" class="logo-icono"> Brújula Viajes</p>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html">Destinos</a>
+        <a href="galeria.html">Galería</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contenedor seccion">
+    <h1>Contacto</h1>
+    <p>Escribinos y te ayudamos a armar tu viaje.</p>
+
+    <form id="formularioContacto" class="formulario" novalidate>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com">
+
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="8888-8888">
+
+      <label for="asunto">Asunto</label>
+      <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje">
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+
+      <p id="mensajeFormulario" class="mensaje-formulario"></p>
+
+      <button type="submit" class="boton">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Brújula Viajes &copy; 2026</p>
+  </footer>
+
+  <script src="js/funciones.js"></script>
+</body>
+</html>
